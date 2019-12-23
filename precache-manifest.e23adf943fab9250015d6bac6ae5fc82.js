@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "86c3ee6ba62b4da6697e",
+    "revision": "425ad054998add690770",
     "url": "/DrinkSearchApp/static/css/main.5d3f4e8b.chunk.css"
   },
   {
-    "revision": "86c3ee6ba62b4da6697e",
-    "url": "/DrinkSearchApp/static/js/main.0d22457e.chunk.js"
+    "revision": "425ad054998add690770",
+    "url": "/DrinkSearchApp/static/js/main.07d8b672.chunk.js"
   },
   {
     "revision": "2ab61317feb4b8fb91b6",
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/DrinkSearchApp/static/media/drinkArt2.142f29b1.png"
   },
   {
-    "revision": "49330763598499b0c296aa515dc2d903",
+    "revision": "98239bc031e11fd545451b8e91e6a6ec",
     "url": "/DrinkSearchApp/index.html"
   }
 ];
