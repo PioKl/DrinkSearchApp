@@ -27,8 +27,7 @@ const Result = (props) => {
                             <input type="checkbox" id="menuToggle" />
                             <ul className="vocabularyItemsList">
                                 <h1>Vocabulary</h1>
-                                <li className="vocabularyListItem">ts - tea spoon</li>
-                                <li className="vocabularyListItem">tsp - tea spoon</li>
+                                <li className="vocabularyListItem">ts, tsp - tea spoon</li>
                                 <li className="vocabularyListItem">tbsp - table spoon</li>
                                 <li className="vocabularyListItem">oz - 30 ml</li>
                                 <li className="vocabularyListItem">cl - 10 ml</li>
