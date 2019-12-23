@@ -1,0 +1,42 @@
+/* COLORS */
+
+$black: #0d0814;
+$purpleDark: #462a3e;
+$purpleLight: #8c4a58;
+$orangeMid: #cc755e;
+$orangeLight: #f4b15d;
+$yellow: #f9f871;
+
+.searchInput {
+    font-size: 1rem;
+    padding: 15px 50px;
+    text-align: center;
+    border: 3px solid $orangeLight;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.searchInput::placeholder {
+    color: white;
+}
+
+.searchInput:focus {
+    animation: changingColors .8s ease-in-out infinite alternate;
+    /* Safari 4.0 - 8.0 */
+    -webkit-animation: changingColors .8s ease-in-out infinite alternate;
+
+}
+
+@keyframes changingColors {
+    from {
+        border: 3px solid $orangeLight;
+    }
+
+    to {
+        border: 3px solid $black;
+        -webkit-box-shadow: 0 0 5px $yellow;
+        box-shadow: 0 0 5px $yellow;
+    }
+}

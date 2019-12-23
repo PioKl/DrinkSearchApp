@@ -1,0 +1,290 @@
+/* COLORS */
+
+$black: #0d0814;
+$purpleDark: #462a3e;
+$purpleLight: #8c4a58;
+$orangeMid: #cc755e;
+$orangeLight: #f4b15d;
+$yellow: #f9f871;
+
+/* Welcome Site Drink Photo */
+
+.introPhoto {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.drinkArt {
+    width: calc(15% + 100px);
+}
+
+ul {
+    padding: 0;
+}
+
+/* ================================= 
+                HEADER
+====================================*/
+#mainHeader {
+    padding: 15px 0;
+    font-family: 'Goudy Bookletter 1911', serif;
+}
+
+
+.mainHeaderHeading::first-letter {
+    color: $orangeLight;
+}
+
+
+/* ================================= 
+        Main Section Container
+====================================*/
+#mainSectionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 'mainSectionInformations''mainSectionIngredients';
+}
+
+
+/* ================================= 
+        Ingredients Section
+====================================*/
+
+#mainSectionIngredients {
+    grid-area: mainSectionIngredients;
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: center;
+    margin: 16px 5px;
+}
+
+
+.ingredientList,
+.amountOfIngredientList {
+    list-style: none;
+    text-align: left;
+    padding: 20px;
+    margin: 0;
+    background-color: $black;
+}
+
+.ingredientList {
+    border: 2px solid $orangeLight;
+    border-left: 0;
+    border-left: 1px dotted white;
+}
+
+.amountOfIngredientList {
+    border: 2px solid $orangeLight;
+    border-right: 0;
+}
+
+.amountOfIngredientListHeading {
+    white-space: nowrap;
+}
+
+.ingredientListItem,
+.amountOfIngredientListItem {
+    padding-bottom: 2rem;
+}
+
+
+/* ================================= 
+        Ingredients Section
+          Vocabulary Menu
+====================================*/
+
+.vocabularyMenu {
+    display: flex;
+    background-color: $black;
+    border: 2px solid $orangeLight;
+}
+
+.vocabularyMenu label {
+    display: flex;
+    cursor: pointer;
+    transition: 1s;
+    border-top: 1px solid $orangeLight;
+}
+
+.vocabularyMenu label:hover {
+    background-color: $purpleLight;
+}
+
+.vocabularyMenu input:checked~label:hover {
+    background-color: $purpleDark;
+}
+
+.vocabularySpan {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    align-self: center;
+    width: 25px; //bo w mozilli sie nie wyswietli jak tego nie dodam
+    margin-right: 5px; //wycentrowanie
+}
+
+.closeVocabularySpan {
+    align-self: center;
+    padding: 0 5px;
+}
+
+.vocabularyMenu input {
+    display: none;
+}
+
+.vocabularyMenu input:checked~label span:last-child {
+    display: none;
+}
+
+.vocabularyMenu input:not(:checked)~label span:first-child {
+    display: none;
+}
+
+.vocabularyItemsList {
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    transition: width 0.5s, height 0.5s;
+    list-style: none;
+}
+
+.vocabularyMenu input:checked~ul {
+    width: 200px;
+    height: 100%;
+    border-right: 2px solid $orangeLight;
+}
+
+.vocabularyMenu input:checked~label {
+    background-color: $purpleLight;
+}
+
+
+/* ================================= 
+        Informations Section
+====================================*/
+
+#mainSectionInformations {
+    grid-area: mainSectionInformations;
+    align-self: center;
+    margin: 16px 5px;
+    padding: 20px;
+    position: relative;
+}
+
+/* stworzenie bordera poziomego */
+#mainSectionInformations::before {
+    content: '';
+    background-color: $orangeLight;
+    position: absolute;
+    /* display: block; */
+    height: 2px;
+    left: 50%;
+    width: 95%;
+    bottom: 0;
+    transform: translate(-50%, 0);
+}
+
+.instructionsHeading {
+    text-decoration: underline;
+    text-decoration-color: $orangeLight;
+}
+
+.instructionsHeading::first-letter {
+    color: $orangeLight;
+}
+
+#mainSectionInformations h2 {
+    color: $orangeLight;
+}
+
+.glassToServeContainer h2,
+.glassToServeContainer span,
+.howToDoContainer h2,
+.howToDoContainer span {
+    display: inline;
+    font-size: 18px;
+}
+
+.glassToServeContainer h2,
+.howToDoContainer h2 {
+    font-size: 20px;
+}
+
+.glassToServeHeading::before,
+.howToDoHeading::before {
+    font-family: "Font Awesome 5 Free";
+    font-size: 1rem;
+    color: white;
+    position: relative;
+}
+
+.glassToServeHeading::before {
+    content: '\f57b';
+    right: 2%;
+    bottom: 2px;
+}
+
+.howToDoHeading::before {
+    content: '\f059';
+    right: 2%;
+    bottom: 1px;
+}
+
+.howToDoContainer {
+    padding: 0 30px;
+    padding-bottom: 10px;
+}
+
+.drinkPhoto {
+    width: 50%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    border-radius: 5%;
+    -webkit-box-shadow: 0 0 10px #fff;
+    box-shadow: 0 0 10px #fff;
+}
+
+.drinkPhoto:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-box-shadow: 0 0 10px $purpleDark;
+    box-shadow: 0 0 10px $purpleDark;
+}
+
+
+/*=============================
+          Media Queries 
+ ============================*/
+
+
+@media only screen and (min-width : 1224px) {
+    #mainSectionContainer {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'mainSectionIngredients mainSectionInformations';
+    }
+
+    //stworzenie bordera pionowego
+    #mainSectionInformations::after {
+        content: "";
+        background-color: $orangeLight;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 95%;
+        width: 2px;
+    }
+
+    .drinkPhoto {
+        width: 30%;
+    }
+
+    /*     .drinkArt {
+        width: 200px;
+    } */
+
+}

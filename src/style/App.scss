@@ -1,0 +1,25 @@
+/* COLORS */
+
+$black: #0d0814;
+$purpleDark: #462a3e;
+$purpleLight: #8c4a58;
+$orangeMid: #cc755e;
+$orangeLight: #f4b15d;
+$yellow: #f9f871;
+
+.App {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: 'Kalam', cursive;
+  display: grid; // wyrowna prawidlowo searchPanel i Drink: ....
+}
+
+body {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  /* height: 100vh; */
+  /* background-color: $purpleDark; */
+  background-image: linear-gradient(to right top, $purpleDark, $purpleLight);
+}
