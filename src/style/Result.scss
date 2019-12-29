@@ -30,6 +30,9 @@ ul {
     font-family: 'Goudy Bookletter 1911', serif;
 }
 
+.mainHeaderHeading {
+    font-size: calc(20px + .96vw);
+}
 
 .mainHeaderHeading::first-letter {
     color: $orangeLight;
@@ -80,12 +83,19 @@ ul {
     border-right: 0;
 }
 
+.ingredientListHeading,
+.amountOfIngredientListHeading {
+    //32px standard
+    font-size: calc(20px + .76vw);
+}
+
 .amountOfIngredientListHeading {
     white-space: nowrap;
 }
 
 .ingredientListItem,
 .amountOfIngredientListItem {
+    font-size: calc(10px + .40vw);
     padding-bottom: 2rem;
 }
 
@@ -96,7 +106,7 @@ ul {
 ====================================*/
 
 .vocabularyMenu {
-    display: flex;
+    display: none; //dla smartfonow nie ma
     background-color: $black;
     border: 2px solid $orangeLight;
 }
@@ -120,7 +130,7 @@ ul {
     writing-mode: vertical-rl;
     text-orientation: upright;
     align-self: center;
-    width: 25px; //bo w mozilli sie nie wyswietli jak tego nie dodam
+    width: 25px; //bo w mozilli sie nie wyswietli jak tego nie dodam, musi jakas szerokosc byc podana
     margin-right: 5px; //wycentrowanie
 }
 
@@ -134,33 +144,68 @@ ul {
 }
 
 .vocabularyMenu input:checked~label span:last-child {
-    display: none;
+    display: none; //nie wyswietli za strzalka Vocabulary
 }
 
 .vocabularyMenu input:not(:checked)~label span:first-child {
-    display: none;
+    display: none; //a to spowoduje, ze nie bedzie strzalki przed Vocabulary, jak jeszcze nie nacisne tego menu
 }
 
 .vocabularyItemsList {
-    overflow: hidden;
+    overflow: hidden; //zapobiega zjawisku wystawania zawartości poza element
     width: 0;
     height: 0;
     padding: 0;
     margin: 0;
-    transition: width 0.5s, height 0.5s;
+    /* transition: width 0.5s, height 0.5s; */
+    //https://codepen.io/briangelhaus/pen/rApot
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    transition: all .5s ease;
     list-style: none;
+    font-size: 0; //jak zwijac bede to niech rozmiar czcionki bedzie 0, dzieki temu nie rozciagnie sie w dol niepotrzebnie
+}
+
+.vocabularyItemsListHeading {
+    padding-top: 30px;
+    padding-bottom: 4px;
 }
 
 .vocabularyMenu input:checked~ul {
-    width: 200px;
-    height: 100%;
+    width: 12.5rem; //200px
+    height: 100%; //ewentualnie zadziala jesli ustawie height na twardo np: 457px
     border-right: 2px solid $orangeLight;
+    //font-size: 16px; //a jak bedzie rozwiniete to niech czcionka bedzie 16px;
+    font-size: calc(10px + 0.35vw);
 }
 
 .vocabularyMenu input:checked~label {
     background-color: $purpleLight;
 }
 
+/* ================================= 
+        Vocabulary Lite Version
+====================================*/
+
+.vocabularyLite {
+    font-size: calc(10px + 0.35vw);
+    display: flex;
+    justify-content: center;
+    //margin: 0px 15px 15px;
+    // margin: 0;
+}
+
+.vocabularyLite h1 {
+    margin: 0;
+}
+
+.vocabularyItemsListLite {
+    padding: 20px calc(90px + 1.5vw);
+    margin-top: 0;
+    list-style: none;
+    border: 2px solid $orangeLight;
+    background-color: $black;
+}
 
 /* ================================= 
         Informations Section
@@ -169,8 +214,9 @@ ul {
 #mainSectionInformations {
     grid-area: mainSectionInformations;
     align-self: center;
-    margin: 16px 5px;
-    padding: 20px;
+    /*     margin: 16px 5px;
+    padding: 20px; */
+    padding: 5px 20px;
     position: relative;
 }
 
@@ -190,6 +236,7 @@ ul {
 .instructionsHeading {
     text-decoration: underline;
     text-decoration-color: $orangeLight;
+    font-size: calc(20px + .96vw);
 }
 
 .instructionsHeading::first-letter {
@@ -200,7 +247,7 @@ ul {
     color: $orangeLight;
 }
 
-.glassToServeContainer h2,
+/* .glassToServeContainer h2,
 .glassToServeContainer span,
 .howToDoContainer h2,
 .howToDoContainer span {
@@ -211,12 +258,28 @@ ul {
 .glassToServeContainer h2,
 .howToDoContainer h2 {
     font-size: 20px;
+} */
+
+.glassToServeContainer h2,
+.howToDoContainer h2 {
+    display: inline;
+    //font-size: 20px;
+    //font-size: calc(10px + .8vw);
+    font-size: calc(10px + .62vw);
+}
+
+.glassToServeContainer span,
+.howToDoContainer span {
+    //display: inline;
+    //font-size: 18px;
+    font-size: calc(10px + .62vw);
 }
 
 .glassToServeHeading::before,
 .howToDoHeading::before {
     font-family: "Font Awesome 5 Free";
-    font-size: 1rem;
+    //font-size: 1rem;
+    font-size: calc(10px + .57vw);
     color: white;
     position: relative;
 }
@@ -239,7 +302,7 @@ ul {
 }
 
 .drinkPhoto {
-    width: 50%;
+    width: 30%;
     -webkit-transform: scale(1);
     transform: scale(1);
     -webkit-transition: .5s ease-in-out;
@@ -249,18 +312,26 @@ ul {
     box-shadow: 0 0 10px #fff;
 }
 
-.drinkPhoto:hover {
+/* .drinkPhoto:hover {
     -webkit-transform: scale(1.3);
     transform: scale(1.3);
     -webkit-box-shadow: 0 0 10px $purpleDark;
     box-shadow: 0 0 10px $purpleDark;
-}
+} */
 
 
 /*=============================
           Media Queries 
  ============================*/
+@media only screen and (min-width : 768px) {
+    .vocabularyMenu {
+        display: flex;
+    }
 
+    .vocabularyLite {
+        display: none;
+    }
+}
 
 @media only screen and (min-width : 1224px) {
     #mainSectionContainer {
@@ -279,8 +350,36 @@ ul {
         width: 2px;
     }
 
+    #mainSectionInformations {
+        grid-area: mainSectionInformations;
+        align-self: center;
+        margin: 16px 5px;
+        padding: 20px 50px;
+        position: relative;
+    }
+
+    /*     .glassToServeContainer h2,
+    .howToDoContainer h2 {
+        display: inline;
+        font-size: 20px;
+    }
+
+    .glassToServeContainer span,
+    .howToDoContainer span {
+        //display: inline;
+        font-size: 18px;
+    } */
+
+
     .drinkPhoto {
         width: 30%;
+    }
+
+    .drinkPhoto:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        -webkit-box-shadow: 0 0 10px $purpleDark;
+        box-shadow: 0 0 10px $purpleDark;
     }
 
     /*     .drinkArt {

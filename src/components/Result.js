@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Result.scss';
-import drinkArt from '../images/drinkArt2.png'; //path to image
+/* import drinkArt from '../images/drinkArt2.png'; //path to image */
 
 const Result = (props) => {
     const { drink, drinkName, drinkInstructions, drinkGlass,
@@ -26,7 +26,7 @@ const Result = (props) => {
                         <nav className="vocabularyMenu">
                             <input type="checkbox" id="menuToggle" />
                             <ul className="vocabularyItemsList">
-                                <h1>Vocabulary</h1>
+                                <h1 className="vocabularyItemsListHeading">Vocabulary</h1>
                                 <li className="vocabularyListItem">ts, tsp - tea spoon</li>
                                 <li className="vocabularyListItem">tbsp - table spoon</li>
                                 <li className="vocabularyListItem">oz - 30 ml</li>
@@ -50,6 +50,15 @@ const Result = (props) => {
                                 <li key={id} className="amountOfIngredientListItem">{/* {id + 1}: */} {amountOfIngredient/* .replace("oz", "* 30ml(vodka glass)").replace("tsp", "tea spoon").replace("ts", "tea spoon").replace("cl", "* 10ml") */}</li> : null)}
                         </ul>
                     </div>
+                    <div className="vocabularyLite">
+                        <ul className="vocabularyItemsListLite">
+                            <h1>Vocabulary</h1>
+                            <li className="vocabularyListItemLite">ts, tsp - tea spoon</li>
+                            <li className="vocabularyListItemLite">tbsp - table spoon</li>
+                            <li className="vocabularyListItemLite">oz - 30 ml</li>
+                            <li className="vocablaryListItemLitem">cl - 10 ml</li>
+                        </ul>
+                    </div>
                     <div id="mainSectionInformations">
                         <img className="drinkPhoto" src={drinkPhoto} alt="Drink" />
                         <h1 className="instructionsHeading">Instructions</h1>
@@ -71,9 +80,9 @@ const Result = (props) => {
                 <h1>Drinks Search App</h1>
                 <h2>You can find here specific drink and find out how to do it</h2>
                 {/* https://www.kissclipart.com/hurricane-drink-cocktail-garnish-juice-orange-drink-ky4cq4/ */}
-                <div className="introPhoto">
+                {/*                 <div className="introPhoto">
                     <img className="drinkArt" src={drinkArt} alt="DrinkIntro" />
-                </div>
+                </div> */}
 
             </>
         )
