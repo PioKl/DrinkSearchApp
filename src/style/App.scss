@@ -9,6 +9,7 @@ $yellow: #f9f871;
 
 html {
   height: 100%; //w html i body to samo, zeby nie bylo w wersji mobile pustego bialego miejsca, gdybym zostawil tylko w body to na np. laptopie bym nie mial bialego miejsca, a na telofonie byl mial
+  overflow: hidden;
 }
 
 body {
@@ -18,6 +19,7 @@ body {
   /* height: 100vh; */
   /* background-color: $purpleDark; */
   background-image: linear-gradient(to right top, $purpleDark, $purpleLight);
+  overflow: auto;
 }
 
 .App {
