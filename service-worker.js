@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/DrinkSearchApp/precache-manifest.fecb5aa4fdaa411747d5fd57b87449cc.js"
+  "/DrinkSearchApp/precache-manifest.d368f851ab455c166bfa455bce02dd7e.js"
 );
 
 workbox.clientsClaim();
