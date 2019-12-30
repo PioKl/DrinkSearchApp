@@ -16,6 +16,10 @@ $yellow: #f9f871;
   justify-content: center; //a nastepnie wyrowna prawidlowo zawartosc
 }
 
+html {
+  height: 100%; //w html i body to samo, zeby nie bylo w wersji mobile pustego bialego miejsca, gdybym zostawil tylko w body to na np. laptopie bym nie mial bialego miejsca, a na telofonie byl mial
+}
+
 body {
   height: 100%;
   background-repeat: no-repeat;
