@@ -121,10 +121,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="mainContainer">
-          <Search search={this.search} />
-          <Result drinks={this.state} />
-        </div>
+        <Search search={this.search} />
+        <Result drinks={this.state} />
       </div>
     );
   }

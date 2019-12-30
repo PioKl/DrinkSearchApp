@@ -7,22 +7,6 @@ $orangeMid: #cc755e;
 $orangeLight: #f4b15d;
 $yellow: #f9f871;
 
-.App {
-  text-align: center;
-  padding-top: 30px;
-  color: white;
-  font-family: 'Kalam', cursive;
-  display: grid; // wyrowna prawidlowo searchPanel i Drink: ....
-  justify-content: center; //a nastepnie wyrowna prawidlowo zawartosc
-}
-
-.mainContainer {
-  height: 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-image: linear-gradient(to right top, $purpleDark, $purpleLight);
-}
-
 html {
   height: 100%; //w html i body to samo, zeby nie bylo w wersji mobile pustego bialego miejsca, gdybym zostawil tylko w body to na np. laptopie bym nie mial bialego miejsca, a na telofonie byl mial
 }
@@ -34,4 +18,13 @@ body {
   /* height: 100vh; */
   /* background-color: $purpleDark; */
   background-image: linear-gradient(to right top, $purpleDark, $purpleLight);
+}
+
+.App {
+  text-align: center;
+  padding-top: 30px;
+  color: white;
+  font-family: 'Kalam', cursive;
+  display: grid; // wyrowna prawidlowo searchPanel i Drink: ....
+  justify-content: center; //a nastepnie wyrowna prawidlowo zawartosc
 }
