@@ -1,10 +1,10 @@
 self.__precacheManifest = [
   {
-    "revision": "a8a91eeb605844f6377d",
-    "url": "/DrinkSearchApp/static/css/main.5558b3c3.chunk.css"
+    "revision": "5ba60c8dc5d7bed96338",
+    "url": "/DrinkSearchApp/static/css/main.9e507863.chunk.css"
   },
   {
-    "revision": "a8a91eeb605844f6377d",
+    "revision": "5ba60c8dc5d7bed96338",
     "url": "/DrinkSearchApp/static/js/main.8a1b4c8a.chunk.js"
   },
   {
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/DrinkSearchApp/static/js/2.345f8e30.chunk.js"
   },
   {
-    "revision": "7bb0b65a987ea0efae4458f47347e25d",
+    "revision": "4b60b709b0c425f225567ee02abcb7d0",
     "url": "/DrinkSearchApp/index.html"
   }
 ];
