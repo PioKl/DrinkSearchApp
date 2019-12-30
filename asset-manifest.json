@@ -1,13 +1,13 @@
 {
-  "main.css": "/DrinkSearchApp/static/css/main.1d1ff7a0.chunk.css",
-  "main.js": "/DrinkSearchApp/static/js/main.8a1b4c8a.chunk.js",
-  "main.js.map": "/DrinkSearchApp/static/js/main.8a1b4c8a.chunk.js.map",
+  "main.css": "/DrinkSearchApp/static/css/main.0ebedcdc.chunk.css",
+  "main.js": "/DrinkSearchApp/static/js/main.ae54ffcb.chunk.js",
+  "main.js.map": "/DrinkSearchApp/static/js/main.ae54ffcb.chunk.js.map",
   "runtime~main.js": "/DrinkSearchApp/static/js/runtime~main.b90ffffc.js",
   "runtime~main.js.map": "/DrinkSearchApp/static/js/runtime~main.b90ffffc.js.map",
   "static/js/2.345f8e30.chunk.js": "/DrinkSearchApp/static/js/2.345f8e30.chunk.js",
   "static/js/2.345f8e30.chunk.js.map": "/DrinkSearchApp/static/js/2.345f8e30.chunk.js.map",
   "index.html": "/DrinkSearchApp/index.html",
-  "precache-manifest.2ba895092ae0c4c3bf3444d25a92fae2.js": "/DrinkSearchApp/precache-manifest.2ba895092ae0c4c3bf3444d25a92fae2.js",
+  "precache-manifest.e35cd3756dfe55d4b1108c0ea5947043.js": "/DrinkSearchApp/precache-manifest.e35cd3756dfe55d4b1108c0ea5947043.js",
   "service-worker.js": "/DrinkSearchApp/service-worker.js",
-  "static/css/main.1d1ff7a0.chunk.css.map": "/DrinkSearchApp/static/css/main.1d1ff7a0.chunk.css.map"
+  "static/css/main.0ebedcdc.chunk.css.map": "/DrinkSearchApp/static/css/main.0ebedcdc.chunk.css.map"
 }
