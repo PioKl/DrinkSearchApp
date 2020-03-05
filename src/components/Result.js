@@ -1,6 +1,6 @@
 import React from 'react';
 import '../style/Result.scss';
-/* import drinkArt from '../images/drinkArt2.png'; //path to image */
+import drinkArt from '../images/drinkArt.png';
 
 const Result = (props) => {
     const { drink, drinkName, drinkInstructions, drinkGlass,
@@ -80,9 +80,9 @@ const Result = (props) => {
                 <h1>Drinks Search App</h1>
                 <h2>You can find here specific drink and find out how to do it</h2>
                 {/* https://www.kissclipart.com/hurricane-drink-cocktail-garnish-juice-orange-drink-ky4cq4/ */}
-                {/*                 <div className="introPhoto">
+                <div className="introPhoto">
                     <img className="drinkArt" src={drinkArt} alt="DrinkIntro" />
-                </div> */}
+                </div>
 
             </>
         )
