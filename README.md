@@ -1,6 +1,9 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 https://piokl.github.io/DrinkSearchApp/
+
+Aplikacja służąca do wyszukiwania wpisanego przez użytkownika drinka, stworzona za pomocą React, wykorzystująca API i JSON. Gdy zostanie wpisany dany drink, zostają wyświetlone o nim szczegółowe informacje i sposób przygotowania.
+
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
